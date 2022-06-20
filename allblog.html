@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Directory | ALl Blogs</title>
+
+    <link rel="stylesheet" href="/assets/css/custom.css">
+	<!-- core:css -->
+	<link rel="stylesheet" href="assets/vendors/core/core.css">
+	<!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+	<!-- end plugin css for this page -->
+    <!-- plugin css for this page -->
+    <link rel="stylesheet" href="assets/vendors/sweetalert2/sweetalert2.min.css">
+    <!-- end plugin css for this page -->
+	<!-- inject:css -->
+	<link rel="stylesheet" href="assets/fonts/feather-font/css/iconfont.css">
+	<link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+	<!-- endinject -->
+  <!-- Layout styles -->  
+	<link rel="stylesheet" href="assets/css/demo_1/style.css">
+  <!-- End layout styles -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" />
+</head>
+<body>
+	<div class="main-wrapper">
+
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <a class="sidebar-brand" href="#">
+                    Directory<span>UI</span>
+                </a>
+                <div class="sidebar-toggler not-active">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="sidebar-body">
+                <ul class="nav">
+                    <li class="nav-item nav-category">Main</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard-one.html">
+                            <i class="link-icon" data-feather="box"></i>
+                            <span class="link-title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-category">User</li>
+                    <li class="nav-item">
+                        <a aria-controls="reviewer" aria-expanded="false" class="nav-link" data-toggle="collapse"
+                           href="#reviewer"
+                           role="button">
+                            <i class="link-icon" data-feather="user"></i>
+                            <span class="link-title">Reviewer</span>
+                            <i class="link-arrow" data-feather="chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="reviewer">
+                            <ul class="nav sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/email/inbox.html">All Reviewer</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/email/read.html">Add Reviewer</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-controls="buyer" aria-expanded="false" class="nav-link" data-toggle="collapse" href="#buyer"
+                           role="button">
+                            <i class="link-icon" data-feather="users"></i>
+                            <span class="link-title">Buyer</span>
+                            <i class="link-arrow" data-feather="chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="buyer">
+                            <ul class="nav sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/email/inbox.html">All Buyer</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/email/read.html">Add Buyer</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-controls="provider" aria-expanded="false" class="nav-link" data-toggle="collapse"
+                           href="#provider"
+                           role="button">
+                            <i class="link-icon" data-feather="user-check"></i>
+                            <span class="link-title">Provider</span>
+                            <i class="link-arrow" data-feather="chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="provider">
+                            <ul class="nav sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/email/inbox.html">All Provider</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/email/read.html">Add Provider</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-controls="adminUser" aria-expanded="false" class="nav-link" data-toggle="collapse"
+                           href="#adminUser"
+                           role="button">
+                            <i class="link-icon" data-feather="user-x"></i>
+                            <span class="link-title">Admin User</span>
+                            <i class="link-arrow" data-feather="chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="adminUser">
+                            <ul class="nav sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/email/inbox.html">All Admin User</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/email/read.html">Add Admin User</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item nav-category">Contents</li>
+                    <li class="nav-item">
+                        <a aria-controls="blogs" aria-expanded="false" class="nav-link" data-toggle="collapse" href="#blogs"
+                           role="button">
+                            <i class="link-icon" data-feather="file-text"></i>
+                            <span class="link-title">Blog</span>
+                            <i class="link-arrow" data-feather="chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="blogs">
+                            <ul class="nav sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="allblog.html">All Blogs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/ui-components/badges.html">Add Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/ui-components/badges.html">All Blog Category</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/ui-components/badges.html">Add Blog Category</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-controls="category" aria-expanded="false" class="nav-link" data-toggle="collapse"
+                           href="#category"
+                           role="button">
+                            <i class="link-icon" data-feather="activity"></i>
+                            <span class="link-title">Services</span>
+                            <i class="link-arrow" data-feather="chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="category">
+                            <ul class="nav sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/ui-components/alerts.html">All Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/ui-components/badges.html">Add Service</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/ui-components/alerts.html">All Service Category</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/ui-components/badges.html">Add Service Category</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.nobleui.com/html/documentation/docs.html" target="_blank">
+                            <i class="link-icon" data-feather="hash"></i>
+                            <span class="link-title">Our Info</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-controls="advancedUI" aria-expanded="false" class="nav-link" data-toggle="collapse"
+                           href="#advancedUI"
+                           role="button">
+                            <i class="link-icon" data-feather="anchor"></i>
+                            <span class="link-title">Pages</span>
+                            <i class="link-arrow" data-feather="chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="advancedUI">
+                            <ul class="nav sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/advanced-ui/cropper.html"> About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/advanced-ui/cropper.html"> Privacy Policy</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/advanced-ui/cropper.html">Terms Of Use</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/advanced-ui/cropper.html">Mission Vision</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/advanced-ui/cropper.html">Success Story</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/advanced-ui/cropper.html">Contact Us</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/advanced-ui/sweet-alert.html">What We Do</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/general/faq.html">Faq</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item nav-category">Settings</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/general/profile.html" target="_blank">
+                            <i class="link-icon" data-feather="mail"></i>
+                            <span class="link-title">Contact Message</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/general/profile.html" target="_blank">
+                            <i class="link-icon" data-feather="life-buoy"></i>
+                            <span class="link-title">Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-controls="general-pages" aria-expanded="false" class="nav-link" data-toggle="collapse"
+                           href="#general-pages"
+                           role="button">
+                            <i class="link-icon" data-feather="book"></i>
+                            <span class="link-title">Role Management</span>
+                            <i class="link-arrow" data-feather="chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="general-pages">
+                            <ul class="nav sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/general/blank-page.html">User Role</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/general/blank-page.html">Permission</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-controls="authPages" aria-expanded="false" class="nav-link" data-toggle="collapse"
+                           href="#authPages"
+                           role="button">
+                            <i class="link-icon" data-feather="unlock"></i>
+                            <span class="link-title">Seo Setting</span>
+                            <i class="link-arrow" data-feather="chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="authPages">
+                            <ul class="nav sub-menu">
+                                <li class="nav-item">
+                                    <a aria-controls="schema" aria-expanded="false" class="nav-link" data-toggle="collapse"
+                                       href="#schema" role="button">
+                                        <span class="link-title">Seo Schema</span>
+                                        <i class="link-arrow" data-feather="chevron-down"></i>
+                                    </a>
+                                    <div class="collapse" id="schema">
+                                        <ul class="nav sub-menu">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="pages/auth/login.html">Product Schema</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="pages/auth/login.html">Product Schema</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/auth/login.html">URL Redirection</a>
+                                </li>
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/auth/register.html">Update Robot.txt</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/auth/register.html">insert Schema</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="settings-sidebar">
+            <div class="sidebar-body">
+                <a class="settings-sidebar-toggler" href="#">
+                    <i data-feather="settings"></i>
+                </a>
+                <h6 class="text-muted">Sidebar:</h6>
+                <div class="form-group border-bottom">
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input checked class="form-check-input" id="sidebarLight" name="sidebarThemeSettings"
+                                   type="radio" value="sidebar-light">
+                            Light
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" id="sidebarDark" name="sidebarThemeSettings" type="radio"
+                                   value="sidebar-dark">
+                            Dark
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- partial -->
+	
+		<div class="page-wrapper">
+
+            <!-- partial:partials/_navbar.html -->
+            <nav class="navbar">
+                <a class="sidebar-toggler" href="#">
+                    <i data-feather="menu"></i>
+                </a>
+                <div class="navbar-content">
+                    <form class="search-form">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i data-feather="search"></i>
+                                </div>
+                            </div>
+                            <input class="form-control" id="navbarForm" placeholder="Search here..." type="text">
+                        </div>
+                    </form>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown nav-messages">
+                            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
+                               data-toggle="dropdown"
+                               href="#" id="messageDropdown" role="button">
+                                <i data-feather="mail"></i>
+                            </a>
+                            <div aria-labelledby="messageDropdown" class="dropdown-menu">
+                                <div class="dropdown-header d-flex align-items-center justify-content-between">
+                                    <p class="mb-0 font-weight-medium">9 New Messages</p>
+                                    <a class="text-muted" href="javascript:">Clear all</a>
+                                </div>
+                                <div class="dropdown-body">
+                                    <a class="dropdown-item" href="javascript:">
+                                        <div class="figure">
+                                            <img alt="userr" src="https://via.placeholder.com/30x30">
+                                        </div>
+                                        <div class="content">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p>Leonardo Payne</p>
+                                                <p class="sub-text text-muted">2 min ago</p>
+                                            </div>
+                                            <p class="sub-text text-muted">Project status</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:">
+                                        <div class="figure">
+                                            <img alt="userr" src="https://via.placeholder.com/30x30">
+                                        </div>
+                                        <div class="content">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p>Carl Henson</p>
+                                                <p class="sub-text text-muted">30 min ago</p>
+                                            </div>
+                                            <p class="sub-text text-muted">Client meeting</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:">
+                                        <div class="figure">
+                                            <img alt="userr" src="https://via.placeholder.com/30x30">
+                                        </div>
+                                        <div class="content">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p>Jensen Combs</p>
+                                                <p class="sub-text text-muted">1 hrs ago</p>
+                                            </div>
+                                            <p class="sub-text text-muted">Project updates</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:">
+                                        <div class="figure">
+                                            <img alt="userr" src="https://via.placeholder.com/30x30">
+                                        </div>
+                                        <div class="content">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p>Amiah Burton</p>
+                                                <p class="sub-text text-muted">2 hrs ago</p>
+                                            </div>
+                                            <p class="sub-text text-muted">Project deadline</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:">
+                                        <div class="figure">
+                                            <img alt="userr" src="https://via.placeholder.com/30x30">
+                                        </div>
+                                        <div class="content">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p>Yaretzi Mayo</p>
+                                                <p class="sub-text text-muted">5 hr ago</p>
+                                            </div>
+                                            <p class="sub-text text-muted">New record</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="dropdown-footer d-flex align-items-center justify-content-center">
+                                    <a href="javascript:">View all</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown nav-notifications">
+                            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
+                               data-toggle="dropdown"
+                               href="#" id="notificationDropdown" role="button">
+                                <i data-feather="bell"></i>
+                                <div class="indicator">
+                                    <div class="circle"></div>
+                                </div>
+                            </a>
+                            <div aria-labelledby="notificationDropdown" class="dropdown-menu">
+                                <div class="dropdown-header d-flex align-items-center justify-content-between">
+                                    <p class="mb-0 font-weight-medium">6 New Notifications</p>
+                                    <a class="text-muted" href="javascript:">Clear all</a>
+                                </div>
+                                <div class="dropdown-body">
+                                    <a class="dropdown-item" href="javascript:">
+                                        <div class="icon">
+                                            <i data-feather="user-plus"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>New customer registered</p>
+                                            <p class="sub-text text-muted">2 sec ago</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:">
+                                        <div class="icon">
+                                            <i data-feather="gift"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>New Order Recieved</p>
+                                            <p class="sub-text text-muted">30 min ago</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:">
+                                        <div class="icon">
+                                            <i data-feather="alert-circle"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>Server Limit Reached!</p>
+                                            <p class="sub-text text-muted">1 hrs ago</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:">
+                                        <div class="icon">
+                                            <i data-feather="layers"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>Apps are ready for update</p>
+                                            <p class="sub-text text-muted">5 hrs ago</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:">
+                                        <div class="icon">
+                                            <i data-feather="download"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>Download completed</p>
+                                            <p class="sub-text text-muted">6 hrs ago</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="dropdown-footer d-flex align-items-center justify-content-center">
+                                    <a href="javascript:">View all</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown nav-profile">
+                            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
+                               data-toggle="dropdown"
+                               href="#" id="profileDropdown" role="button">
+                                <img alt="profile" src="https://via.placeholder.com/30x30">
+                            </a>
+                            <div aria-labelledby="profileDropdown" class="dropdown-menu">
+                                <div class="dropdown-header d-flex flex-column align-items-center">
+                                    <div class="figure mb-3">
+                                        <img alt="" src="https://via.placeholder.com/80x80">
+                                    </div>
+                                    <div class="info text-center">
+                                        <p class="name font-weight-bold mb-0">Amiah Burton</p>
+                                        <p class="email text-muted mb-3">amiahburton@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-body">
+                                    <ul class="profile-nav p-0 pt-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/general/profile.html">
+                                                <i data-feather="user"></i>
+                                                <span>Profile</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="javascript:">
+                                                <i data-feather="edit"></i>
+                                                <span>Edit Profile</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="javascript:">
+                                                <i data-feather="repeat"></i>
+                                                <span>Switch User</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="javascript:">
+                                                <i data-feather="log-out"></i>
+                                                <span>Log Out</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- partial -->
+
+			<div class="page-content">
+
+				<nav class="page-breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#">Blogs</a></li>
+						<li class="breadcrumb-item active" aria-current="page">All Blogs</li>
+					</ol>
+				</nav>
+
+				<div class="row">
+					<div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                  <a href="createblog.html">
+                  <button type="button" class="btn btn-primary btn-icon-text mb-4">
+                      Create a new blog <i class="btn-icon-prepend" data-feather="plus-square"></i>
+                  </button>
+                  </a>
+                <h6 class="card-title">All Blog List</h6>
+                 <div class="table-responsive">
+                  <table id="dataTableExample" class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Title</th>
+                        <th>image</th>
+                        <th>Updated At</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>5 Steps to Create an Outstanding Marketing Plan</td>
+                        <td>
+                            <div class="media d-block d-sm-flex">
+                                <img src="assets/images/marketing-plan.jpg" class="align-self-center wd-100p wd-sm-150 mb-3 mb-sm-0 mr-3" alt="...">
+                            </div>
+
+                        </td>
+                        <td>2013/03/03</td>
+                        <td>
+
+                            <button type="button" class="btn btn-success btn-icon">
+                                <i data-feather="eye"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-warning btn-icon">
+                                <i data-feather="info"></i>
+                            </button>
+
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i data-feather="more-horizontal"></i>
+                                </button>
+
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Edit</a>
+                                    <a class="dropdown-item" href="#" onclick="showSwal('passing-parameter-execute-cancel')">Delete</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5 Steps to Create an Outstanding Marketing Plan</td>
+                        <td>
+                            <div class="media d-block d-sm-flex">
+                                <img src="assets/images/marketing-plan.jpg" class="align-self-center wd-100p wd-sm-150 mb-3 mb-sm-0 mr-3" alt="...">
+                            </div>
+
+                        </td>
+                        <td>2013/03/03</td>
+                        <td>
+
+                            <button type="button" class="btn btn-success btn-icon">
+                                <i data-feather="eye"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-warning btn-icon">
+                                <i data-feather="info"></i>
+                            </button>
+
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i data-feather="more-horizontal"></i>
+                                </button>
+
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Edit</a>
+                                    <a class="dropdown-item" href="#" onclick="showSwal('passing-parameter-execute-cancel')">Delete</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5 Steps to Create an Outstanding Marketing Plan</td>
+                        <td>
+                            <div class="media d-block d-sm-flex">
+                                <img src="assets/images/marketing-plan.jpg" class="align-self-center wd-100p wd-sm-150 mb-3 mb-sm-0 mr-3" alt="...">
+                            </div>
+
+                        </td>
+                        <td>2013/03/03</td>
+                        <td>
+
+                            <button type="button" class="btn btn-success btn-icon">
+                                <i data-feather="eye"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-warning btn-icon">
+                                <i data-feather="info"></i>
+                            </button>
+
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i data-feather="more-horizontal"></i>
+                                </button>
+
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Edit</a>
+                                    <a class="dropdown-item" href="#" onclick="showSwal('passing-parameter-execute-cancel')">Delete</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5 Steps to Create an Outstanding Marketing Plan</td>
+                        <td>
+                            <div class="media d-block d-sm-flex">
+                                <img src="assets/images/marketing-plan.jpg" class="align-self-center wd-100p wd-sm-150 mb-3 mb-sm-0 mr-3" alt="...">
+                            </div>
+
+                        </td>
+                        <td>2013/03/03</td>
+                        <td>
+
+                            <button type="button" class="btn btn-success btn-icon">
+                                <i data-feather="eye"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-warning btn-icon">
+                                <i data-feather="info"></i>
+                            </button>
+
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i data-feather="more-horizontal"></i>
+                                </button>
+
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Edit</a>
+                                    <a class="dropdown-item" href="#" onclick="showSwal('passing-parameter-execute-cancel')">Delete</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5 Steps to Create an Outstanding Marketing Plan</td>
+                        <td>
+                            <div class="media d-block d-sm-flex">
+                                <img src="assets/images/marketing-plan.jpg" class="align-self-center wd-100p wd-sm-150 mb-3 mb-sm-0 mr-3" alt="...">
+                            </div>
+
+                        </td>
+                        <td>2013/03/03</td>
+                        <td>
+
+                            <button type="button" class="btn btn-success btn-icon">
+                                <i data-feather="eye"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-warning btn-icon">
+                                <i data-feather="info"></i>
+                            </button>
+
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i data-feather="more-horizontal"></i>
+                                </button>
+
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Edit</a>
+                                    <a class="dropdown-item" href="#" onclick="showSwal('passing-parameter-execute-cancel')">Delete</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- partial:../../partials/_footer.html -->
+			<footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between">
+				<p class="text-muted text-center text-md-left">Copyright © 2022 <a href="https://www.nobleui.com" target="_blank">Directory</a>. All rights reserved</p>
+				<p class="text-muted text-center text-md-left mb-0 d-none d-md-block">Handcrafted With <i class="mb-1 text-primary ml-1 icon-small" data-feather="heart"></i></p>
+			</footer>
+			<!-- partial -->
+	
+		</div>
+	</div>
+
+	<!-- core:js -->
+	<script src="assets/vendors/core/core.js"></script>
+	<!-- endinject -->
+  <!-- plugin js for this page -->
+  <script src="assets/vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+	<!-- end plugin js for this page -->
+	<!-- inject:js -->
+	<script src="assets/vendors/feather-icons/feather.min.js"></script>
+	<script src="assets/js/template.js"></script>
+	<!-- endinject -->
+  <!-- custom js for this page -->
+  <script src="assets/js/data-table.js"></script>
+	<!-- end custom js for this page -->
+    <script src="assets/js/sweet-alert.js"></script>
+    <!-- plugin js for this page -->
+    <script src="assets/vendors/sweetalert2/sweetalert2.min.js"></script>
+    <script src="assets/vendors/promise-polyfill/polyfill.min.js"></script> <!-- Optional:  polyfill for ES6 Promises for IE11 and Android browser -->
+    <!-- end plugin js for this page -->
+</body>
+</html>
